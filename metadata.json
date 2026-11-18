@@ -1,0 +1,6 @@
+{
+  "name": "Pedagogická laboratoř: Teorie & Praxe",
+  "description": "Unifikovaný vzdělávací portál pro studenty pedagogiky propojující teorii s praxí: zasedací pořádek, kreativní deník, EduDesign architekt a digitální wellbeing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
