@@ -24,6 +24,7 @@ import { WellbeingApp } from './components/wellbeing/WellbeingApp';
 import { AssessmentApp } from './components/assessment/AssessmentApp';
 import { ObservationsApp, createBlankObservation } from './components/observations/ObservationsApp';
 import { AddieApp, createBlankAddieProject } from './components/addie/AddieApp';
+import { AboutApp } from './components/about/AboutApp';
 import { PdfExportModal } from './components/common/PdfExportModal';
 import { playTypewriterSound } from './utils/typewriterAudio';
 import {
@@ -55,6 +56,7 @@ const VALID_TABS: AppTab[] = [
   'assessment',
   'observations',
   'addie',
+  'about',
 ];
 
 function safeParseStorage<T>(key: string, fallback: T): T {
@@ -657,6 +659,13 @@ export default function App() {
             onUpdateProjects={setAddieProjects}
             activeProjectId={currentAddieProject?.id || ''}
             onSelectProjectId={setActiveAddieId}
+            onPrintCustomHtml={handleOpenCustomPrintModal}
+          />
+        )}
+
+        {activeTab === 'about' && (
+          <AboutApp
+            language={language}
             onPrintCustomHtml={handleOpenCustomPrintModal}
           />
         )}

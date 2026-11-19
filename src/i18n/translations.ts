@@ -13,6 +13,7 @@ export const translations = {
       assessment: 'Kriteriální hodnocení',
       observations: 'Náslechy',
       addie: 'Model ADDIE',
+      about: 'O projektu',
       dark: 'Tmavý režim',
       light: 'Světlý režim',
       export: 'Exportovat',
@@ -67,6 +68,7 @@ export const translations = {
         assessment: ['Formální & Obsahová kritéria', 'Přísná kontrola objektivity AI', 'Škála 3-2-1-0 (60 % práh)', 'Histogramy & Google Sheets'],
         observations: ['Reflektivní část (Hodnotitel)', 'Hodnotící část (Hodnocený)', 'Průvodce & AI asistent u každého bodu', 'Google Docs, JSON & PDF'],
         addie: ['5 fází ADDIE + AI ladění', 'Iterativní vývojové cykly', 'Prompt pro AI Studio / Lekce', 'Vizualizace, Docs & JSON'],
+        about: ['Licence CC BY-NC-SA', 'Často kladené otázky (FAQ)', 'Experimentální metodika', 'Doc. RNDr. Michal Černý, Ph.D.'],
       },
       modules: {
         seating: {
@@ -103,6 +105,11 @@ export const translations = {
           title: 'Model ADDIE — Iterační studio',
           desc: 'Pětikrokový průvodce návrhem vzdělávacích objektů i klasické výuky (Analýza, Návrh 5 řešení, Vývoj, Implementace s 5otázk. AI dialogem, Evaluace) s vizuálním sledováním iteračních cyklů.',
           theory: 'Model ADDIE (Branson), Iterativní instrukční design (SAM / Design-Based Research), Konstruktivistické sladění.',
+        },
+        about: {
+          title: 'O projektu',
+          desc: 'Základní informace o projektu na jednom místě: licence, často kladené otázky (FAQ), metodika práce s nástroji a medailonek autora.',
+          theory: 'Otevřené vzdělávací zdroje (OER), Reflektivní praxe, Konstruktivistické sladění.',
         },
       },
     },
@@ -977,6 +984,7 @@ export const translations = {
       assessment: 'Criterion Assessment',
       observations: 'Observations',
       addie: 'ADDIE Model',
+      about: 'About Project',
       dark: 'Dark mode',
       light: 'Light mode',
       export: 'Export',
@@ -1031,6 +1039,7 @@ export const translations = {
         assessment: ['Formal & Content Criteria', 'Strict AI Bias Audit', '3-2-1-0 Scale (60% Pass)', 'Histograms & Google Sheets'],
         observations: ['Reflective Part (Observer)', 'Evaluative Part (Teacher)', 'Dual Guide & Per-Item AI Assistant', 'Google Docs, JSON & PDF'],
         addie: ['5 ADDIE Phases + AI Tuning', 'Iterative Cycle Tracking', 'AI Studio Prompt / Lesson', 'Visual Loop, Docs & JSON'],
+        about: ['CC BY-NC-SA License', 'Frequently Asked Questions', 'Experimental Methodology', 'Doc. RNDr. Michal Černý, Ph.D.'],
       },
       modules: {
         seating: {
@@ -1067,6 +1076,11 @@ export const translations = {
           title: 'ADDIE Model — Iterative Studio',
           desc: 'Five-stage instructional design workflow (Analysis, 5 diverse Design options, Development plan, Implementation prompt/lesson with 5-question AI dialog, Evaluation) with multi-cycle visualization.',
           theory: 'ADDIE Model (Branson), Iterative Design (SAM / Design-Based Research), Constructive Alignment.',
+        },
+        about: {
+          title: 'About Project',
+          desc: 'Essential documentation for the platform: licensing terms, frequently asked questions (FAQ), methodological background, and author profile.',
+          theory: 'Open Educational Resources (OER), Reflective Practice, Constructive Alignment.',
         },
       },
     },
@@ -1938,6 +1952,7 @@ export const translations = {
       assessment: 'Ocenianie kryterialne',
       observations: 'Hospitacje',
       addie: 'Model ADDIE',
+      about: 'O projekcie',
       dark: 'Tryb ciemny',
       light: 'Tryb jasny',
       export: 'Eksportuj',
@@ -1992,6 +2007,7 @@ export const translations = {
         assessment: ['Kryteria formalne i treści', 'Rygorystyczny audyt AI', 'Skala 3-2-1-0 (60 % próg)', 'Histogramy & Google Sheets'],
         observations: ['Część refleksyjna (Obserwator)', 'Część oceniająca (Prowadzący)', 'Przewodnik & Asystent AI', 'Google Docs, JSON & PDF'],
         addie: ['5 etapów ADDIE + Dialog AI', 'Iteracyjne cykle rozwoju', 'Prompt AI Studio / Lekcja', 'Wizualizacja, Docs & JSON'],
+        about: ['Licencja CC BY-NC-SA', 'Najczęstsze pytania (FAQ)', 'Metodyka eksperymentalna', 'Doc. RNDr. Michal Černý, Ph.D.'],
       },
       modules: {
         seating: {
@@ -2028,6 +2044,11 @@ export const translations = {
           title: 'Model ADDIE — Studio iteracyjne',
           desc: 'Pięcioetapowy przewodnik projektowania dydaktycznego (Analiza, 5 rozwiązań, Rozwój, Wdrożenie z 5 pytaniami AI, Ewaluacja) z wizualizacją i kontynuacją cykli iteracyjnych.',
           theory: 'Model ADDIE (Branson), Projektowanie iteracyjne (SAM / DBR), Wyrównanie konstruktywistyczne.',
+        },
+        about: {
+          title: 'O projekcie',
+          desc: 'Kluczowe informacje o projekcie w jednym miejscu: licencja, najczęstsze pytania (FAQ), metodyka pracy z modułami oraz profil autora.',
+          theory: 'Otwarte zasoby edukacyjne (OER), Praktyka refleksyjna, Wyrównanie konstruktywistyczne.',
         },
       },
     },

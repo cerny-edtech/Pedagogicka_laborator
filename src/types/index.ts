@@ -1,6 +1,6 @@
 export type Language = 'cs' | 'en' | 'pl';
 export type ThemeMode = 'light' | 'dark';
-export type AppTab = 'hub' | 'seating' | 'journal' | 'edudesign' | 'wellbeing' | 'assessment' | 'observations' | 'addie';
+export type AppTab = 'hub' | 'seating' | 'journal' | 'edudesign' | 'wellbeing' | 'assessment' | 'observations' | 'addie' | 'about';
 
 // ----------------- SEATING APP TYPES -----------------
 export type Gender = 'M' | 'F';

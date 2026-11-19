@@ -27,6 +27,8 @@ import {
   computeAddieProjectMetrics,
   formatDurationSeconds,
 } from '../components/addie/addieMetrics';
+import { loadAboutContent } from '../components/about/aboutData';
+import { buildAboutPrintableHtml } from '../components/about/AboutApp';
 
 export interface PrintableDocData {
   title: string;
@@ -784,6 +786,11 @@ export function generatePrintableHtml(
     return buildAddiePrintableHtml(data.addieProject, language);
   }
 
+  if (tab === 'about') {
+    const aboutData = loadAboutContent(language);
+    return buildAboutPrintableHtml(aboutData, language, null);
+  }
+
   return {
     title: `${t.appTitle} — ${t.appSubtitle}`,
     subtitle: t.hub.badge,
@@ -796,6 +803,7 @@ export function generatePrintableHtml(
         <li><strong>${t.nav.assessment}:</strong> ${t.hub.modules.assessment.desc}</li>
         <li><strong>${t.nav.observations}:</strong> ${t.hub.modules.observations.desc}</li>
         <li><strong>${t.nav.addie}:</strong> ${t.hub.modules.addie.desc}</li>
+        <li><strong>${t.nav.about}:</strong> ${t.hub.modules.about.desc}</li>
       </ul>
     `,
     filename: 'pedagogicka_laborator',

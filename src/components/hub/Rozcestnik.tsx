@@ -8,6 +8,7 @@ import {
   Eye,
   RotateCw,
   ArrowRight,
+  Info,
 } from 'lucide-react';
 import { AppTab, Language } from '../../types';
 import { translations } from '../../i18n/translations';
@@ -79,11 +80,23 @@ export const Rozcestnik: React.FC<RozcestnikProps> = ({ language, onSelectTab })
     },
   ];
 
+  // Always keep "O projektu" strictly as the last card in the list
+  const aboutModule = {
+    id: 'about' as AppTab,
+    title: t.hub.modules.about.title,
+    desc: t.hub.modules.about.desc,
+    icon: <Info className="w-6 h-6 text-slate-700 dark:text-slate-300" />,
+    accent: 'border-slate-200 dark:border-slate-800 hover:border-slate-500/50',
+    features: t.hub.moduleFeatures.about,
+  };
+
+  const orderedModules = [...modules, aboutModule];
+
   return (
     <div className="space-y-6 py-2 max-w-7xl mx-auto">
-      {/* Grid of the 4 Main Sub-Applications (Clean, Minimalist, No Hero Panel, No Theory Badges) */}
+      {/* Grid of Main Sub-Applications with "O projektu" always last */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {modules.map((m) => (
+        {orderedModules.map((m) => (
           <div
             key={m.id}
             className={`group rounded-2xl border bg-white dark:bg-slate-900 p-6 sm:p-7 shadow-xs hover:shadow-md transition-all flex flex-col justify-between ${m.accent}`}
